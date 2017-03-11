@@ -3,14 +3,14 @@
     <img src="/images/people.jpg" alt="photo montage">
   </div>
 
-  <div class="login">
+  <form class="login">
     <input id="name" type="text" ng-model="user.name" placeholder="User Name">
     <br />
     <input id="password" type="password" ng-model="user.password" placeholder="Password">
     <br />
 
 <!--   need a button instead?-->
-<!--    <a ui-sref="profile" ng-click="login(user.userName, user.password)">Login</a>-->
-    <button ng-click="login(user)">Login</button>
-  </div>
+    <!--<a ui-sref="profile" ng-click="login()">Login</a>-->
+    <button ng-click="login()" type="submit">Login</button>
+  </form>
 </div>
